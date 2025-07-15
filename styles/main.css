@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +57,33 @@ body {
   max-width: 300px;
   margin-top: 1.5rem;
   border-radius: 10px;
+}
+.features a.external-link {
+  color: #1e88e5;
+  font-weight: 500;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  position: relative;
+  padding-right: 1.2em;
+}
+.features a.external-link::after {
+  content: "↗";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.8em;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+.features a.external-link:hover {
+  color: #1565c0;
+}
+.features a.external-link:hover::after {
+  transform: translateY(-2px);
+}
+.features a.external-link:focus {
+  outline: 2px dashed #42a5f5;
+  outline-offset: 3px;
 }
 
 .cta-section {
