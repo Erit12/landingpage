@@ -1,0 +1,115 @@
+@import "variables";
+
+// Estilos base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $text-color;
+  background: $background;
+}
+
+// Hero
+.hero {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+
+  .hero-content {
+    h1 {
+      font-size: 2.5rem;
+
+      .highlight {
+        color: $highlight-color;
+      }
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: $cta-color;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        background: $cta-hover;
+      }
+    }
+  }
+}
+
+// Características
+.features {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 1rem 0;
+
+    li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+  }
+
+  img {
+    max-width: 300px;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+// Llamado a la acción
+.cta-section {
+  background: $light-bg;
+  text-align: center;
+  padding: 3rem 1rem;
+
+  .cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background: $cta-color;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      background: $cta-hover;
+    }
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: $footer-bg;
+}
+
+// Responsividad
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .features img {
+    max-width: 400px;
+  }
+}
